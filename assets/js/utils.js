@@ -40,3 +40,13 @@ function addNavLinkListener(linkId, sectionName) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    fetchAllSections().then(() => {
+      // Add event listeners for each navbar link using utils functions
+      addNavLinkListener('home-link', 'home');
+      addNavLinkListener('about-link', 'about');
+      addNavLinkListener('project-link', 'project');
+      addNavLinkListener('contact-link', 'contact');
+    });
+  });
+
