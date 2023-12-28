@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadTabContent(tabId) {
-    var url = tabId + '.html';
+    var url = 'tab-content/' + tabId + '.html';
     fetch(url)
         .then(response => response.text())
         .then(data => {
