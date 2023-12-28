@@ -7,7 +7,6 @@
   <title>Wina Finka</title>
   <link rel="stylesheet" href="node_modules/bootswatch/dist/lux/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <script src="assets/js/utils.js"></script>
 </head>
 
 <!-- NAVBAR -->
@@ -16,12 +15,12 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarColor03">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#home-section" id="home-link">Home
+          <a class="nav-link active" href="index.html">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-section" id="about-link">About</a>
+          <a class="nav-link" href="section/about-section.html">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Project</a>
@@ -35,11 +34,21 @@
 </nav>
 
 <body>
-  <!-- Introduction Section -->
-  <div id="home-section" class="container"></div>
+  <div id="home-section" class="container"
+    style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <!-- Single Column for Text -->
+    <div>
+        <h2>Hello, I'm Wina Finka</h2>
+        <p>A Quality Engineer that really loves to learn <br>I'm also able to build websites and UI/UX Design</p>
+        <a href="http://bit.ly/getInTouchWina" class="btn btn-primary" target="_blank">Get in touch <i
+                class="fas fa-arrow-right" style="margin-left: 10px;"></i></a>
+    </div>
 
-  <!-- About Section -->
-  <div id="about-section" class="container"></div>
+    <!-- Second Column -->
+    <div class="col-md-6" style="margin-left: 10em;">
+        <img src="assets/img/girl_with_laptop.jpeg" alt="Image description" style="width: 100%; max-width: 100%;">
+    </div>
+</div>
   
 </body>
 
