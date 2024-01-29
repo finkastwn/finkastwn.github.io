@@ -1,0 +1,7 @@
+#getInTouchBtn {
+    box-shadow: 0.2rem 0.3rem 0.5rem gray;
+}
+
+#getInTouchBtn:hover {
+    opacity: 0.9;
+}
